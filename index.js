@@ -12,7 +12,8 @@ const PORT = process.env.PORT || 5000;
 
 // Middleware
 app.use(cors(
-  '127.0.0.1:5173'
+  '127.0.0.1:5173',
+  'https://pbl-brown.vercel.app '
 ));
 app.use(express.json());
 
