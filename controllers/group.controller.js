@@ -202,7 +202,7 @@ exports.closeGroup = async (req, res) => {
 exports.getInterestedStudents = async (req, res) => {
   try {
       const { requestId } = req.params;
-
+      
       const group = await Group.findById(requestId).populate('interestedStudents.student', 'name email section');
 
       if (!group) {
