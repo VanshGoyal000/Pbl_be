@@ -1,0 +1,10 @@
+schemaVersion: "1.1"
+endpoints:
+    - name: pbl-grouping-api
+      displayName: pbl-grouping-api
+      service:
+        basePath: /
+        port: 5000
+      type: REST
+      networkVisibilities:
+        - Public
